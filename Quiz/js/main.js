@@ -218,27 +218,29 @@ class QuizApp {
 
         let myimg = document.createElement("img");
         myimg.src = "./Quiz/images/yes-baby.gif";
+        myimg.classList.add("winnerImg")
         myimg.alt = "Congrats!";
         myimg.style.width = "150px";
         myimg.style.height = "120px";
         myimg.style.borderRadius = "16px";
-        document.querySelector(".landing .questionAnswer").style.height = "30%";
-
+        document.querySelector(".landing .questionAnswer").style.height = "35%";
+        myimg.style.alignSelf = "center"
         this.myBox.append(myimg);
     }
 
     resetDisplay() {
         this.checkAnswer();
+        this.myBox.classList = "final-Box";
 
         if (localStorage.getItem("score") == this.myData.questions.length) {
             this.fullmark();
         } else if (localStorage.getItem("timer").split(",")[0] == 0 && localStorage.getItem("timer").split(",")[1] == 0) {
             this.questionElement.textContent = "Time Out!";
+            this.timeOut()
         } else {
             this.questionElement.textContent = "Submit Successfully 👍";
         }
 
-        this.myBox.classList = "final-Box";
 
         let parentScore = document.createElement("div");
         parentScore.classList = "parent-score";
@@ -326,7 +328,7 @@ class QuizApp {
                 timerSec = 59;
             } else {
                 clearInterval(this.countdown);
-                this.timeOut();
+                this.resetDisplay();
                 return;
             }
 
@@ -352,10 +354,9 @@ class QuizApp {
         audio.play();
 
 
-        this.questionElement.style.fontSize = "34px";
+        this.questionElement.style.fontSize = "30px";
         this.questionElement.style.color = "red";
 
-        this.resetDisplay();
     }
 
     addAnswer(e) {
@@ -407,6 +408,9 @@ class QuizApp {
             if (question.correct_answer === question.choosen_answer) {
                 this.score += 1;
             }
+
+
+
         });
 
         localStorage.setItem("score", this.score);
