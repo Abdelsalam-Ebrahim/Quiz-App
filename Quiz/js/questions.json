@@ -1,0 +1,168 @@
+{
+    "questions": [{
+            "question": "What does HTML stand for?",
+            "correct_answer": "HyperText Markup Language",
+            "answers": [
+                "Hyperlinks and Text Markup Language",
+                "Home Tool Markup Language",
+                "HyperText Transfer Protocol",
+                "HyperText Markup Language"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which HTML tag is used to define an internal style sheet?",
+            "correct_answer": "<style>",
+            "answers": [
+                "<script>",
+                "<css>",
+                "<style>",
+                "<link>"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which property is used in CSS to change the background color?",
+            "correct_answer": "background-color",
+            "answers": [
+                "color",
+                "bgcolor",
+                "background-image",
+                "background-color"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which CSS property is used to change the text color of an element?",
+            "correct_answer": "color",
+            "answers": [
+                "font-color",
+                "text-color",
+                "color",
+                "text-style"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "How do you select an element with the id 'header' in CSS?",
+            "correct_answer": "#header",
+            "answers": [
+                ".header",
+                "#header",
+                "header",
+                "*header"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which HTML attribute is used to define inline styles?",
+            "correct_answer": "style",
+            "answers": [
+                "class",
+                "font",
+                "styles",
+                "style"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which tag is used to define an unordered list in HTML?",
+            "correct_answer": "<ul>",
+            "answers": [
+                "<ol>",
+                "<li>",
+                "<ul>",
+                "<dl>"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "What is the correct syntax for referring to an external script called 'app.js'?",
+            "correct_answer": "<script src='app.js'></script>",
+            "answers": [
+                "<script href='app.js'></script>",
+                "<script ref='app.js'></script>",
+                "<script name='app.js'></script>",
+                "<script src='app.js'></script>"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Where is the correct place to insert a JavaScript in an HTML document?",
+            "correct_answer": "Both <head> and <body>",
+            "answers": [
+                "The <head> section",
+                "The <body> section",
+                "Both <head> and <body>",
+                "None of the above"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which method is used to add an element to the end of an array in JavaScript?",
+            "correct_answer": "push()",
+            "answers": [
+                "add()",
+                "append()",
+                "push()",
+                "concat()"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which event occurs when the user clicks on an HTML element?",
+            "correct_answer": "onclick",
+            "answers": [
+                "onmouseover",
+                "onchange",
+                "onclick",
+                "onmouseclick"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "How do you declare a JavaScript variable?",
+            "correct_answer": "var name;",
+            "answers": [
+                "variable name;",
+                "v name;",
+                "var name;",
+                "string name;"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "Which operator is used to assign a value to a variable?",
+            "correct_answer": "=",
+            "answers": [
+                "-",
+                "=",
+                "*",
+                "+"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "How do you write a comment in JavaScript?",
+            "correct_answer": "// This is a comment",
+            "answers": [
+                "'This is a comment'",
+                "<!-- This is a comment -->",
+                "// This is a comment",
+                "/ This is a comment /"
+            ],
+            "choosen_answer": ""
+        },
+        {
+            "question": "How do you round the number 7.25 to the nearest integer in JavaScript?",
+            "correct_answer": "Math.round(7.25)",
+            "answers": [
+                "round(7.25)",
+                "Math.rnd(7.25)",
+                "Math.round(7.25)",
+                "Math.floor(7.25)"
+            ],
+            "choosen_answer": ""
+        }
+    ]
+}

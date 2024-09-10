@@ -1,0 +1,282 @@
+:root {
+    --mainColor: #50586C;
+    --secondaryColor: #DCE2F0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--mainColor);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23DCE2F0"><path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 77 666.7 77 833.3 28 1000 28V0H0Z" opacity=".5"></path><path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 70 666.7 70 833.3 16 1000 16V0H0Z" opacity=".5"></path><path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 63 666.7 63 833.3 4 1000 4V0H0Z"></path></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 55%;
+    margin: 50px auto;
+    padding: 50px 20px;
+}
+
+.container .mainbox {
+    display: flex;
+    background-color: var(--secondaryColor);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 70vh;
+    filter: drop-shadow(-5px -5px 12px rgb(40, 40, 40));
+    box-shadow: 12px 12px 12px rgb(40, 40, 40);
+    transition: 0.4s;
+    position: relative;
+}
+
+.container .mainbox .box1 {
+    background-color: var(--secondaryColor);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.slide-out-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.slide-in-right {
+    transform: translateX(100%);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.container .mainbox .box1 .steps {
+    display: flex;
+    justify-content: center;
+}
+
+.container .mainbox .box1 .steps p {
+    color: var(--mainColor);
+    font-size: 32px;
+    text-transform: none;
+}
+
+.container .mainbox .box1 .steps div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.container .mainbox .box1 .steps span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    padding: 2px;
+    color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    outline: 2px solid var(--mainColor);
+    position: relative;
+}
+
+.container .mainbox .box1 .steps span:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    width: 1500px;
+    height: 3px;
+    top: 50%;
+    left: 39px;
+    transform: translateY(-50%);
+    background-color: #afb7c7;
+}
+
+.container .mainbox .box1 .steps span:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    width: 800px;
+    height: 3px;
+    top: 50%;
+    left: 39px;
+    transform: translateY(-50%);
+    background-color: #afb7c7;
+}
+
+.container .mainbox .box1 .steps div .active {
+    background-color: rgb(72, 139, 72);
+}
+
+.container .mainbox .box1 .steps div .active::before {
+    background-color: var(--mainColor);
+}
+
+.container .mainbox .box1 .steps span i {
+    font-size: 22px;
+    color: white;
+}
+
+.inputs .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.inputs .label>div {
+    width: 100%;
+    position: relative;
+}
+
+.inputs .label div input {
+    margin-bottom: 10px;
+    padding: 12px 8px;
+    border-radius: 6px;
+    background-color: var(--secondaryColor);
+    border: 2px solid #919191;
+    font-size: 16px;
+    outline: none;
+    width: 85%;
+}
+
+.inputs .label input[type="file"] {
+    border: none;
+    border-radius: none;
+    font-size: 16px;
+    width: 90%;
+}
+
+.inputs .label input::placeholder {
+    color: #919191;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.inputs .label div i {
+    color: var(--mainColor);
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(calc(-50% - 4px));
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+}
+
+.inputs .label p {
+    color: red;
+    margin: 8px 0 0;
+}
+
+.inputs .label img {
+    width: 120px;
+    height: 150px;
+}
+
+.box1 button {
+    width: 80%;
+    border-radius: 12px;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    padding: 8px 0px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.box1 button:hover {
+    background-color: var(--secondaryColor);
+    color: var(--mainColor);
+}
+
+.container .mainbox .box2 {
+    background-color: var(--mainColor);
+    color: aliceblue;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.container .mainbox .box2 .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    text-transform: capitalize;
+}
+
+.container .mainbox .box2 h3 {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.container .mainbox .box2 p {
+    line-height: 1.8;
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+@media (max-width: 978px) {
+    .container {
+        height: 100vh;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 0px;
+    }
+    .container .mainbox {
+        flex-direction: column-reverse !important;
+        height: 100%;
+        width: 100%;
+        filter: none;
+        border-radius: 0px;
+    }
+    .box1 .steps {
+        margin-bottom: 30px;
+    }
+    .container .mainbox .box1 {
+        flex: 2;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .inputs .label img {
+        width: 120px;
+        height: 70px;
+    }
+    .container .mainbox .box2 {
+        padding: 0;
+    }
+    .box1 button {
+        width: 70%;
+    }
+    .steps p {
+        font-size: 22px !important;
+        margin: 0;
+        padding: 0;
+    }
+    .container .mainbox .box2 h3 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        /* padding: 0; */
+    }
+    .container .mainbox .box2 p {
+        line-height: 1.9;
+        font-size: 18px;
+        width: 80%;
+        word-spacing: 3px;
+    }
+}
